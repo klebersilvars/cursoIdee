@@ -1,0 +1,64 @@
+.header-config-container {
+    height: 80px;
+    width: 100%;
+    background-color: var(--cor5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.header-config-container > h1 {
+    color: var(--cor1);
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.navs-container-admin {
+    display: flex;
+    gap: 1.3em;
+    align-items: center;
+    width: 20%;
+}
+
+.link-painel, .link-login {
+    font-weight: bold;
+    color: var(--cor1);
+    font-size: 18px;
+    position: relative;
+    text-decoration: none; /* Remova o sublinhado padrão */
+    overflow: hidden; /* Oculta a borda inicialmente */
+}
+
+.link-painel::before, .link-login::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Altura da borda inferior */
+    bottom: 0;
+    left: 0;
+    background-color: var(--cor1);
+    transform: scaleX(0); /* Inicialmente, a largura é zero */
+    transform-origin: bottom right; /* Origem da transformação */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.link-painel:hover::before, .link-login:hover::before {
+    transform: scaleX(1); /* Aumenta a largura ao passar o mouse */
+    transform-origin: bottom left; /* Atualiza a origem da transformação */
+}
+
+.button-sair {
+    background-color: red;
+    border-radius: 6px;
+    outline: none;
+    color: white;
+    font-weight: bold;
+    width: 40%;
+    height: 30px;
+}
+
+.button-sair:hover {
+    background-color: brown;
+    transition-duration: 0.5s;
+}

@@ -1,0 +1,15 @@
+.acessar-button {
+    background-color: var(--cor4);
+    height: 40px;
+    width: 150px;
+    border-radius: 6px;
+    font-weight: bold;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.322);
+    border: none;
+}
+
+.acessar-button:hover {
+    background-color: white;
+    border: 2px solid var(--cor4);
+    transition-duration: 0.5s;
+}

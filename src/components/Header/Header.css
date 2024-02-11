@@ -1,0 +1,49 @@
+.header-container {
+    height: 80px;
+    background-color: var(--cor5);
+    width: 100%;
+    padding: 10px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.377);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-container > h1 {
+    color: var(--cor1);
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.navs-container {
+    display: flex;
+    gap: 1.3em;
+}
+
+.link-painel, .link-login {
+    font-weight: bold;
+    color: var(--cor1);
+    font-size: 18px;
+    position: relative;
+    text-decoration: none; /* Remova o sublinhado padrão */
+    overflow: hidden; /* Oculta a borda inicialmente */
+}
+
+.link-painel::before, .link-login::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Altura da borda inferior */
+    bottom: 0;
+    left: 0;
+    background-color: var(--cor1);
+    transform: scaleX(0); /* Inicialmente, a largura é zero */
+    transform-origin: bottom right; /* Origem da transformação */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.link-painel:hover::before, .link-login:hover::before {
+    transform: scaleX(1); /* Aumenta a largura ao passar o mouse */
+    transform-origin: bottom left; /* Atualiza a origem da transformação */
+}

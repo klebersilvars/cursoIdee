@@ -1,0 +1,29 @@
+.link-painel-mobile-admin, .link-login-mobile-admin {
+    font-weight: bold;
+    /* Centraliza o elemento */
+    position: absolute;
+    color: var(--cor5);
+    font-size: 18px;
+    position: relative;
+    text-decoration: none; /* Remova o sublinhado padrão */
+    overflow: hidden; /* Oculta a borda inicialmente */
+}
+
+.link-painel-mobile-admin::before, .link-login-mobile-admin::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Altura da borda inferior */
+    bottom: 0;
+    left: 0;
+    background-color: var(--cor1);
+    transform: scaleX(0); /* Inicialmente, a largura é zero */
+    transform-origin: bottom right; /* Origem da transformação */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.link-painel-mobile-admin:hover::before, .link-login-mobile-admin:hover::before {
+    transform: scaleX(1); /* Aumenta a largura ao passar o mouse */
+    transform-origin: bottom left; /* Atualiza a origem da transformação */
+}
+

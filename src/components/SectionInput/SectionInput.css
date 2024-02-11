@@ -1,0 +1,740 @@
+.sectionInput-container {
+    height: 100svh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-container-ide {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-title-cadastro {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-ide-principal {
+    height: 200px;
+    width: 200px;
+}
+
+.container-title-cadastro>h1 {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+
+.text-container-ide>h1 {
+    font-weight: bold;
+    font-size: 52px;
+    text-align: center;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.text-container-ide>p {
+    font-weight: bold;
+    margin-top: 20px;
+    width: 80%;
+    text-align: center;
+    font-size: 18px;
+    color: var(--cor4);
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.container-inputs-ide {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(233, 233, 233, 0.774);
+}
+
+.container-inputs-ide>h1 {
+
+    font-weight: bold;
+    font-size: 36px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    margin-top: 20px;
+}
+
+.form-container {
+    width: 100%;
+    margin-top: -20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-nome,
+.container-email,
+.container-cpf,
+.container-rg,
+.container-nascimento,
+.container-senha {
+    width: 70%;
+    height: 11%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.container-nome>span,
+.container-email>span,
+.container-cpf>span,
+.container-rg>span,
+.container-nascimento>span,
+.container-senha>span {
+    position: absolute;
+    top: -4px;
+    left: 20%;
+}
+
+.input-nome,
+.input-email,
+.input-cpf,
+.input-rg,
+.input-nascimento,
+.input-senha {
+    width: 60%;
+    height: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.377);
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    padding-left: 5px;
+    margin-top: 10px;
+    font-size: 17px;
+
+}
+
+.input-nome:focus,
+.input-rg:focus,
+.input-email:focus,
+.input-nascimento:focus,
+.input-endereco:focus,
+.input-cpf:focus,
+.input-cep:focus,
+.input-endereco:focus,
+.input-complemento:focus,
+.input-senha:focus {
+    transition-duration: 0.5s;
+    border: 1px solid black;
+}
+
+.input-nome::placeholder,
+.input-email::placeholder,
+.input-cpf::placeholder,
+.input-rg::placeholder,
+.input-cep::placeholder,
+.input-endereco::placeholder,
+.input-complemento::placeholder,
+.input-senha::placeholder {
+    color: rgb(133, 133, 133);
+    font-size: 15px;
+}
+
+.container-enderecos {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-filho-endereco {
+    display: flex;
+    width: 70%;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-cep {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.container-endereco-proprio {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.container-button {
+    margin-top: -30px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.3em;
+    height: 50%;
+}
+
+.container-complemento {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.container-complemento>span {
+    position: absolute;
+    top: 5px;
+    left: 15%;
+}
+
+.input-complemento {
+    width: 200px;
+    height: 40%;
+    border: 1px solid rgba(0, 0, 0, 0.377);
+    border-radius: 3px;
+    outline: none;
+    padding-left: 5px;
+}
+
+.input-cep {
+    width: 140px;
+    height: 40%;
+    border: 1px solid rgba(0, 0, 0, 0.377);
+    border-radius: 3px;
+    outline: none;
+    padding-left: 5px;
+}
+
+.container-endereco-proprio>span {
+    position: absolute;
+    top: 0;
+    left: 9%;
+}
+
+.container-cep>span {
+    position: absolute;
+    top: 0;
+    left: 20%;
+}
+
+.input-endereco {
+    width: 200px;
+    padding-left: 5px;
+    height: 40%;
+    border: 1px solid rgba(0, 0, 0, 0.377);
+    border-radius: 3px;
+    outline: none;
+}
+
+
+
+/* RESPONSIVIDADE ABAIXO */
+
+/* ACIMA DE 820PX */
+@media screen and (min-width: 820px) {
+    .container-title-cadastro {
+        height: 15%;
+    }
+}
+
+
+/*ACIMA DE 1000PX VAI SER ESSA RESOLUÇÃO AI */
+@media screen and (min-width: 1000px) {
+
+    * {
+        overflow-y: hidden;
+    }
+
+    .container-endereco-proprio {
+        width: 60%;
+        height: 100%;
+    }
+
+    .container-endereco-proprio>span {
+        left: 3%;
+    }
+
+    .container-cep>span {
+        left: 8%;
+    }
+
+    .container-complemento>span {
+        left: 3%;
+    }
+}
+
+/*ACIMA DE 1150PX */
+@media screen and (min-width: 1150px) {
+
+    * {
+        overflow-y: hidden;
+    }
+
+    .container-cep>span {
+        left: 12%;
+    }
+
+    .container-complemento>span {
+        left: 6%;
+    }
+}
+
+/* acima de 1400px*/
+@media screen and (min-width: 1400px) {
+
+    * {
+        overflow-y: hidden;
+    }
+
+    .container-filho-endereco {
+        width: 63%;
+    }
+
+    .container-cep {
+        width: 46%;
+        height: 75%;
+    }
+
+    .container-cep>span {
+        left: 19%;
+    }
+
+    .container-complemento {
+
+        height: 86%;
+    }
+
+    .container-complemento>span {
+        left: 15%;
+    }
+
+    .container-endereco-proprio {
+
+        height: 75%;
+    }
+
+    .container-endereco-proprio>span {
+        left: 13%;
+    }
+}
+
+/*abaixo de 1400px */
+
+@media screen and (max-width: 1400px) {
+    .container-cep {
+        width: 48%;
+        height: 77%;
+    }
+
+    .container-cep>span {
+        left: 15%;
+    }
+
+    .container-complemento {
+        width: 42%;
+        height: 87%;
+    }
+
+    .container-complemento>span {
+        left: 9%;
+    }
+
+    .container-endereco-proprio {
+        width: 60%;
+        height: 83%;
+    }
+
+    .container-endereco-proprio>span {
+        left: 10%;
+    }
+}
+
+/*abaixo de 1285px */
+
+@media screen and (max-width: 1285px) {
+
+    .container-cep {
+        width: 49%;
+    }
+
+    .container-cep>span {
+        left: 15%;
+    }
+
+    .container-endereco-proprio>span {
+        left: 10%;
+    }
+
+    .container-complemento>span {
+        left: 4%;
+    }
+}
+
+/*abaixo de 1185px */
+
+@media screen and (max-width: 1185px) {
+    .container-complemento {
+        width: 46%;
+    }
+
+    .container-cep {
+        width: 40%;
+    }
+
+    .container-cep>span {
+        left: 7%;
+    }
+}
+
+/*abaixo de 1085px */
+
+@media screen and (max-width: 1085px) {
+
+    .container-filho-endereco {
+        width: 76%;
+    }
+
+    .container-complemento {
+        width: 50%;
+    }
+}
+
+/*abaixo de 995px */
+
+@media screen and (max-width: 995px) {
+
+    .container-filho-endereco {
+        width: 80%;
+    }
+
+    .container-complemento {
+        width: 59%;
+    }
+
+    .container-endereco-proprio>span {
+        left: 8%;
+    }
+}
+
+/*abaixo de 931px */
+
+@media screen and (max-width: 931px) {
+
+    .container-filho-endereco {
+        width: 80%;
+    }
+
+    .container-complemento {
+        width: 70%;
+    }
+
+    .container-endereco-proprio>span {
+        left: 8%;
+    }
+
+    .container-cep {
+        width: 44%;
+    }
+}
+
+/*abaixo de 879px */
+
+@media screen and (max-width: 879px) {
+
+    .container-filho-endereco {
+        width: 80%;
+    }
+
+    .container-complemento {
+        width: 80%;
+    }
+
+    .container-endereco-proprio>span {
+        left: 8%;
+    }
+
+    .container-cep {
+        width: 44%;
+    }
+
+    .container-filho-endereco {
+        width: 86%;
+    }
+}
+
+/*abaixo de 830px */
+@media screen and (max-width: 830px) {
+
+    .container-filho-endereco {
+        width: 80%;
+    }
+
+    .container-complemento {
+        width: 100%;
+    }
+
+    .container-endereco-proprio>span {
+        left: 8%;
+    }
+
+    .container-cep {
+        width: 44%;
+    }
+
+    .container-filho-endereco {
+        width: 100%;
+    }
+
+    .container-title-cadastro {
+        height: 21%;
+    }
+}
+
+/*abaixo de 816px */
+
+@media screen and (max-width: 815px) {
+
+    .container-nome,
+    .container-email,
+    .container-cpf,
+    .container-rg,
+    .container-nascimento,
+    .container-senha {
+        width: 75%;
+    }
+
+
+    .container-button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .container-complemento>span {
+        top: -3px;
+    }
+}
+
+/*abaixo de 753px */
+@media screen and (max-width: 753px) {
+
+    .container-nome,
+    .container-email,
+    .container-cpf,
+    .container-rg,
+    .container-nascimento,
+    .container-senha {
+        width: 85%;
+    }
+
+
+    .container-button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .container-complemento>span {
+        top: -3px;
+    }
+}
+
+/*abaixo de 690px */
+
+@media screen and (max-width: 690px) {
+
+    .container-nome,
+    .container-email,
+    .container-cpf,
+    .container-rg,
+    .container-nascimento,
+    .container-senha {
+        width: 100%;
+    }
+
+    .container-filho-endereco {
+        width: 100%;
+        flex-direction: column;
+        height: 150px;
+    }
+
+    .container-cep {
+        height: 48%;
+        width: 100%;
+    }
+
+    .container-cep>span {
+        left: 20%;
+        top: -6px;
+    }
+
+    .input-cep {
+        width: 197px;
+        height: 50%;
+    }
+
+    .container-endereco-proprio {
+        height: 50%;
+        width: 100%;
+    }
+
+    .container-endereco-proprio>span {
+        left: 20%;
+        top: -4px;
+    }
+
+    .input-endereco {
+        height: 55%;
+    }
+
+    .container-button {
+        margin-top: 0px;
+    }
+
+    .container-complemento {
+        height: 100%;
+    }
+
+    .container-complemento>span {
+        top: -6px;
+        left: 0;
+    }
+
+    .input-complemento {
+        height: 55%;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .container-button {
+        flex-direction: column;
+        position: relative;
+    }
+
+    .container-complemento {
+        min-height: 90%;
+        position: absolute;
+        top: 0;
+    }
+
+    .container-complemento>span {
+        left: 15%;
+    }
+
+    .input-cep,
+    .input-endereco {
+        width: 60%;
+        height: 59%;
+    }
+
+    .input-complemento {
+        width: 60%;
+        height: 45%;
+    }
+
+    .container-endereco-proprio>span,
+    .container-cep>span {
+        left: 20%;
+        top: -8px;
+        /* Ajuste conforme necessário */
+    }
+
+    .sectionInput-container {
+        height: 800px;
+    }
+
+    .container-complemento>span {
+        left: 20%;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    .container-inputs-ide {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .container-inputs-ide {
+        width: 80%;
+    }
+
+    .text-container-ide {
+        width: 40%;
+        z-index: 1;
+    }
+
+    .text-container-ide>h1 {
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width: 321px) {
+
+    .text-container-ide {
+        width: 100%;
+        height: 105vh;
+        margin-top: 3px;
+    }
+
+    .logo-ide-principal {
+        height: 100px;
+        width: 100px;
+    }
+
+    .text-container-ide>h1 {
+        font-size: 28px;
+    }
+
+    .container-inputs-ide {
+        width: 100%;
+        height: 900px;
+        padding: 10px;
+    }
+
+    .form-container {
+        margin-top: 20px;
+        height: 89vh;
+    }
+
+    .sectionInput-container {
+        flex-direction: column;
+    }
+    
+    .container-nome, .container-email, .container-cpf, .container-rg, .container-nascimento, .container-senha {
+        height: 85%;
+    }
+}
+
+@media screen and (max-width: 305px) {
+    .text-container-ide {
+        position: relative;
+        top: 120px;
+    }
+
+    
+}
